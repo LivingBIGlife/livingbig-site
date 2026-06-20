@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Living BIG &mdash; The biggest creators meet the world's biggest animals</title>
+<meta name="description" content="Living BIG sends the biggest creators to meet the world's biggest animals and their biggest champions. Each expedition builds on a movement designed to support the people and projects championing these animals.">
+
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Living BIG">
+<meta property="og:title" content="Living BIG &mdash; The biggest creators meet the world's biggest animals">
+<meta property="og:description" content="The biggest creators meet the world's biggest animals and their biggest champions. The first expedition launches July 2026.">
+<meta property="og:image" content="https://livingbig.life/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://livingbig.life/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@LivingBigLife">
+<meta name="twitter:title" content="Living BIG &mdash; The biggest creators meet the world's biggest animals">
+<meta name="twitter:description" content="The biggest creators meet the world's biggest animals and their biggest champions. The first expedition launches July 2026.">
+<meta name="twitter:image" content="https://livingbig.life/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0A1929;
+    --ink-soft: #2C3E50;
+    --muted: #6B7785;
+    --line: #E8E4DC;
+    --bg: #FFFFFF;
+    --bg-soft: #F4F6F8;
+    --accent: #0072B5;
+    --leaf: #16A34A;
+    --leaf-deep: #15803D;
+    --accent-warm: #E8943C;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+  }
+
+  img { display: block; max-width: 100%; }
+
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ============================================
+     NAV
+  ============================================ */
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 32px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .wordmark {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    opacity: 0.9;
+  }
+
+  .nav-links a:hover {
+    opacity: 1;
+  }
+
+  /* ============================================
+     HERO
+  ============================================ */
+  .hero {
+    position: relative;
+    height: 90vh;
+    min-height: 640px;
+    max-height: 880px;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    position: absolute;
+    inset: 0;
+    background-image: url('home-hero.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to bottom, rgba(10, 25, 41, 0.35) 0%, rgba(10, 25, 41, 0) 18%),
+      linear-gradient(to top right, rgba(10, 25, 41, 0.65) 0%, rgba(10, 25, 41, 0.1) 50%, rgba(10, 25, 41, 0) 75%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 48px 88px;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: clamp(30px, 3.4vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: white;
+    max-width: 580px;
+  }
+
+  /* ============================================
+     SHARED SECTION STYLES
+  ============================================ */
+  section.block {
+    padding: 140px 0;
+  }
+
+  section.block-soft {
+    background: var(--bg-soft);
+  }
+
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  .eyebrow.green {
+    color: var(--leaf);
+  }
+
+  h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    margin-bottom: 32px;
+  }
+
+  h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  p.lead {
+    font-size: clamp(18px, 1.4vw, 21px);
+    line-height: 1.55;
+    color: var(--ink-soft);
+    font-weight: 400;
+    max-width: 680px;
+    margin-bottom: 40px;
+  }
+
+  /* ============================================
+     CTA BUTTON
+  ============================================ */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent);
+    color: white;
+    padding: 18px 32px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    border-radius: 999px;
+    transition: all 0.2s;
+  }
+
+  .btn:hover {
+    background: #0090E0;
+    gap: 14px;
+  }
+
+  .btn-light {
+    background: white;
+    color: var(--ink);
+  }
+
+  .btn-light:hover {
+    background: var(--accent);
+    color: white;
+  }
+
+  /* ============================================
+     EXPEDITION FEATURE
+  ============================================ */
+  .expedition-feature {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .expedition-text {
+    max-width: 540px;
+  }
+
+  .expedition-meta {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .expedition-meta span {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .expedition-meta strong {
+    color: var(--ink);
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  /* Maya placeholder card */
+  .maya-card {
+    position: relative;
+    aspect-ratio: 4/5;
+    background: var(--bg-soft);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .maya-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .maya-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #F0E4D0 0%, #E8D4B0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .maya-placeholder-icon {
+    width: 80px;
+    height: 80px;
+    border: 2px dashed var(--muted);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .maya-card-content {
+    position: relative;
+    z-index: 2;
+    color: var(--ink);
+  }
+
+  .maya-card-content .name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .maya-card-content .role {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  /* ============================================
+     PLATFORM STATEMENT
+  ============================================ */
+  .statement-inner {
+    max-width: 880px;
+  }
+
+  .statement h2 .accent {
+    color: var(--leaf);
+  }
+
+  .statement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    margin-top: 80px;
+  }
+
+  .statement-item {
+    text-align: left;
+  }
+
+  .statement-item h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: clamp(24px, 2.2vw, 28px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 16px;
+    padding-top: 24px;
+    border-top: 3px solid var(--leaf);
+    display: inline-block;
+  }
+
+  .statement-item p {
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+
+  .statement-closer {
+    max-width: 880px;
+    margin: 96px auto 0;
+    text-align: center;
+    padding: 56px 32px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .statement-closer p {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(22px, 2vw, 28px);
+    line-height: 1.4;
+    color: var(--ink);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+
+  .statement-closer p .accent {
+    color: var(--leaf);
+  }
+
+  /* ============================================
+     PRODUCERS
+  ============================================ */
+  .producer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 24px;
+  }
+
+  .producer-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    padding-top: 20px;
+    border-top: 3px solid var(--accent);
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .producer-bio {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    max-width: 460px;
+  }
+
+  /* ============================================
+     CTA BAND
+  ============================================ */
+  .cta-band {
+    background: var(--ink);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+  }
+
+  .cta-band h2 {
+    color: white;
+    max-width: 800px;
+    margin: 0 auto 24px;
+  }
+
+  .cta-band h2 em {
+    font-style: italic;
+    font-weight: 800;
+    color: white;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  .cta-band p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 540px;
+    margin: 0 auto 48px;
+  }
+
+  .signup-form {
+    display: flex;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .signup-form input {
+    flex: 1;
+    padding: 18px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    border-radius: 999px;
+    transition: all 0.2s;
+  }
+
+  .signup-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .signup-form input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .signup-form button {
+    padding: 18px 32px;
+    background: white;
+    border: none;
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .signup-form button:hover {
+    background: var(--accent);
+    color: white;
+  }
+
+  .kit-embed {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Kit form styling — scoped to beat Kit's specificity */
+  .kit-embed .formkit-form[data-uid="e715b015c9"] {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-input {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+    color: #ffffff !important;
+    border-radius: 999px !important;
+    padding: 16px 22px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    min-height: 54px !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-input::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-input:focus {
+    border-color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.22) !important;
+    outline: none !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-submit {
+    background: #ffffff !important;
+    border-radius: 999px !important;
+    padding: 16px 28px !important;
+    min-height: 54px !important;
+    transition: background 0.2s !important;
+    box-shadow: none !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-submit > div,
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-spinner {
+    background: transparent !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-submit span {
+    color: #0A1929 !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-submit:hover {
+    background: #0072B5 !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-submit:hover span {
+    color: #ffffff !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-alert {
+    background: rgba(255, 100, 100, 0.12) !important;
+    color: rgba(255, 200, 200, 1) !important;
+    border: 1px solid rgba(255, 100, 100, 0.3) !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    font-family: 'Inter', sans-serif !important;
+  }
+
+  .kit-embed .formkit-powered-by-convertkit-container {
+    display: none !important;
+  }
+
+  /* ============================================
+     FOOTER
+  ============================================ */
+  .footer {
+    background: var(--bg);
+    padding: 64px 0 48px;
+    border-top: 1px solid var(--line);
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer-wordmark {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .footer-meta {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .footer-socials a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-socials a:hover {
+    color: var(--accent);
+  }
+
+  /* ============================================
+     RESPONSIVE
+  ============================================ */
+  @media (max-width: 900px) {
+    .nav {
+      padding: 20px 24px;
+    }
+
+    .nav-links {
+      gap: 16px;
+      font-size: 13px;
+    }
+
+    .container, .hero-content {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .hero-content {
+      padding-bottom: 56px;
+    }
+
+    section.block {
+      padding: 80px 0;
+    }
+
+    .expedition-feature,
+    .producer-grid {
+      grid-template-columns: 1fr;
+      gap: 56px;
+    }
+
+    .statement-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      margin-top: 56px;
+    }
+
+    .expedition-meta {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .cta-band {
+      padding: 80px 0;
+    }
+
+    .signup-form {
+      flex-direction: column;
+    }
+
+    .footer-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="wordmark">Living BIG</a>
+  <div class="nav-links">
+    <a href="spermwhales.html">Expedition</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-image"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>The biggest creators meet the world's biggest animals &mdash; and their biggest champions.</h1>
+  </div>
+</section>
+
+<!-- EXPEDITION FEATURE -->
+<section class="block">
+  <div class="container">
+    <div class="expedition-feature">
+      <div class="expedition-text">
+        <span class="eyebrow">The First Expedition</span>
+        <h2>Sperm Whales</h2>
+        <p class="lead">
+          Maya Higa travels to a place where a single family of sperm whales has lived for generations &mdash; with their own dialect, their own dynasties, and fewer than three hundred members left.
+        </p>
+        <a href="spermwhales.html" class="btn">
+          Follow the expedition &nbsp;&rarr;
+        </a>
+        <div class="expedition-meta">
+          <span>
+            <strong>Maya Higa</strong>
+            Creator
+          </span>
+          <span>
+            <strong>Patrick Dykstra</strong>
+            Whale Champion
+          </span>
+          <span>
+            <strong>July 2026</strong>
+            Expedition
+          </span>
+        </div>
+      </div>
+      <div class="maya-card">
+        <img src="sperm-whale-tease.jpg" alt="A sperm whale rising vertically in deep blue water with a small freediver beside it">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORM STATEMENT -->
+<section class="block block-soft statement">
+  <div class="container">
+    <div class="statement-inner">
+      <span class="eyebrow green">What is Living BIG</span>
+      <h2>Big animals aren't just charismatic. <span class="accent">They're essential.</span></h2>
+      <p class="lead">
+        Protecting them is some of the highest-leverage conservation work on Earth.
+      </p>
+    </div>
+    <div class="statement-grid">
+      <div class="statement-item">
+        <h3>Whales change climate.</h3>
+        <p>Their nutrient cycling drives ocean productivity and carbon capture at planetary scale.</p>
+      </div>
+      <div class="statement-item">
+        <h3>Wolves change rivers.</h3>
+        <p>Apex predators shape entire ecosystems through the cascading effects of their presence.</p>
+      </div>
+      <div class="statement-item">
+        <h3>Elephants engineer forests.</h3>
+        <p>Every seed they spread, every path they clear, builds the patterns of their ecosystem.</p>
+      </div>
+    </div>
+    <div class="statement-closer">
+      <p>
+        Each Living BIG expedition builds on a <span class="accent">movement</span> &mdash; designed to support the people and projects championing these animals, and to keep the audience connected long after the expedition and feature video.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCERS -->
+<section class="block">
+  <div class="container">
+    <span class="eyebrow">Executive Producers</span>
+    <h2>Built by people who've done this at scale.</h2>
+    <div class="producer-grid">
+      <div>
+        <div class="producer-name">Tim Kelly</div>
+        <p class="producer-bio">
+          Former President of the National Geographic Society. Thirty years building Nat Geo into a global multimedia force.
+        </p>
+      </div>
+      <div>
+        <div class="producer-name">Josh Thome</div>
+        <p class="producer-bio">
+          National Geographic Explorer, filmmaker, and founder of 4REAL. Lead Producer of #TeamWater &mdash; the largest creator-led campaign in internet history.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Join Living BIG.</h2>
+    <p>Action, updates, videos, and more.</p>
+    <div class="kit-embed">
+      <script async data-uid="e715b015c9" src="https://living-big.kit.com/e715b015c9/index.js"></script>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a href="/" class="footer-wordmark">Living BIG</a>
+      <div class="footer-socials">
+        <a href="https://instagram.com/livingbig.life" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://x.com/LivingBigLife" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://youtube.com/@LivingBigLife" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.linkedin.com/company/livingbig" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hide Kit branding by text match (CSS selectors can miss it)
+  function hideKitBranding() {
+    document.querySelectorAll('.kit-embed').forEach(embed => {
+      embed.querySelectorAll('*').forEach(el => {
+        const text = (el.textContent || '').trim().toLowerCase();
+        const isBranding = (
+          text === 'built with kit' ||
+          text === 'powered by kit' ||
+          text === 'powered by convertkit' ||
+          (el.tagName === 'A' && el.href && (el.href.includes('kit.com') || el.href.includes('convertkit')))
+        );
+        if (isBranding && text.length < 40) {
+          let target = el;
+          while (target.parentElement && target.parentElement !== embed && target.parentElement.children.length === 1) {
+            target = target.parentElement;
+          }
+          target.style.display = 'none';
+        }
+      });
+    });
+  }
+  setTimeout(hideKitBranding, 500);
+  setTimeout(hideKitBranding, 1500);
+  setTimeout(hideKitBranding, 3000);
+</script>
+
+</body>
+</html>
